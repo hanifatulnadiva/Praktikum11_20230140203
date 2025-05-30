@@ -7,9 +7,9 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-red-200 via-yellow-200 via-green-200 via-blue-200 to-purple-200">
 
-    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <div class="bg-white p-8 rounded-lg shadow-md w-[500px] max-w-md my-32">
         <div class="text-center mb-6">
             <h3 class="text-xl font-semibold text-gray-700">Pendaftaran Peminatan</h3>
         </div>
@@ -24,6 +24,24 @@
                 <label for="nim" class="block text-sm font-medium text-gray-700">NIM</label>
                 <input type="text" id="nim" placeholder="NIM anda"
                     class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+
+            <div>
+                <label for="angkatan" class="block text-sm font-medium text-gray-700">Angkatan</label>
+                <select id="angkatan"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md">
+                    <option value="">-- Pilih Angkatan --</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tanggal" class="block text-sm font-medium text-gray-700">Tanggal Pengisian</label>
+                <input type="date" id="tanggal"
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md">
             </div>
 
             <div>
