@@ -6,6 +6,7 @@ function kirimData() {
     var peminatan = document.querySelector("input[name=peminatan]:checked").value;
     var alamat = document.getElementById("alamat").value;
 
+
     alert(
         "Nama: " + name +
         "\nNIM: " + nim +
@@ -14,4 +15,6 @@ function kirimData() {
         "\nPeminatan: " + peminatan +
         "\nAlamat: " + alamat 
     );
+
+    ClearForm();
 }
